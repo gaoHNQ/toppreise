@@ -70,7 +70,7 @@ with open(name, 'a', encoding='utf8', newline='') as f:
             lists.append(float(j.find('div', class_='Plugin_Price').text.replace('<div class="Plugin_Price"> ', '').replace(' </div>', '').replace('\'', '')))
         lists.sort()
         toWrite.append(lists[0])
-        print(models[i].replace('%20', ' ')
+        print(models[i].replace('%20', ' '))
         time.sleep(1)
     Writer.writerow(toWrite)
 print("complete")
